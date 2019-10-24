@@ -3,6 +3,9 @@
 """
 Created on Mon Oct 14 13:42:00 2019
 
+Module gathers tiles and prepares them to be passed through CNN model. Keeps
+Training and Testing, Normal and Cancer tiles all separate.
+
 @author: marissaeppes
 """
 import glob

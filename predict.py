@@ -1,5 +1,5 @@
 """
-This module consists of functions used for the evaluation of the model.
+This module consists of functions used for evaluation of the model.
 """
 
 from PIL import Image

@@ -13,23 +13,44 @@ __The big-picture goal is to take an un-annotated, unobserved WSI, break it up i
 
 ## Files in Repository:
 
-* __tile_function_development.ipynb__ - explains the thought process and algorithms used in extracting the tissue "tiles" used as data units for the convolutional neural network (CNN) image classifier. Tests several of the functions used to perform the extraction.
+### Jupyter Notebooks
 
-* __cnn_notebook.ipynb__ - walks through the thought process and steps to tune and train a convolutional neural network (CNN) image classifier. Performs the training on the final chosen model.
+* __tile_function_development.ipynb__ - Explains the thought process and algorithms used in extracting the tissue "tiles" used as data units for the convolutional neural network (CNN) image classifier. Tests several of the functions used to perform the extraction.
 
-* __train_tiles.py__ - extracts and creates cancer tile images and normal tile images for the purpose of training the model
+* __cnn_notebook.ipynb__ - Walks through the thought process and steps to tune and train a convolutional neural network (CNN) image classifier. Performs the training on the final chosen model.
 
-* __test_tiles.py__ - extracts and creates cancer tile images and normal tile images for the purpose of testing the model
+* __results.ipynb__ - Tests and reports the results of the best Convolutional Neural Network (CNN) Image Classifier as determined in the "Convolutional Neural Network Development" notebook. The notebook also shows example heatmap outputs.
 
-* __cnn_prep.py__ - gathers tiles and prepares them to be passed through CNN model
+### Supporting Python Scripts
 
-* __slide_corner_coords.py__ - stores start and stop coordinates for each slide for further analysis. Start and stop coordinates are chosen and entered manually for each slide.
+* __train_tiles.py__ - Extracts and creates cancer tile images and normal tile images for the purpose of training the model
 
-* __presentation.pdf__ - final presentation slides
+* __test_tiles.py__ - Extracts and creates cancer tile images and normal tile images for the purpose of testing the model
 
-## *In Progress*:
-* __results.ipynb__
-* __visuals.ipynb__
+* __cnn_prep.py__ - Gathers tiles and prepares them to be passed through CNN model
+
+* __slide_corner_coords.py__ - Stores start and stop coordinates for each slide for further analysis. Start and stop coordinates are chosen and entered manually for each slide.
+
+* __predict.py__ - Consists of functions used to make predictions on test data and evaluate the model
+
+* __visualizations.py__ - Consists of functions used to make visualizations to summarize the results of the project. Includes Accuracy vs. Epoch plot, Confusion Matrix, and Heatmaps
+
+### Visual Aids
+
+* __modeling_diagram.png__ - Diagram summarizing the model development and selection process
+
+* __epochs.png__ - Accuracy vs. Epoch plot for final model. Shows epoch where Image Augmentation is introduced.
+
+* __test_021_heatmap.png__ - Example heatmap based on model predictions
+
+* __test_027_heatmap.png__ - Example heatmap based on model predictions
+
+* __test_040_heatmap.png__ - Example heatmap based on model predictions
+
+### Final Presentation
+
+* __presentation.pdf__ - Final presentation slides
+
 
 
 
